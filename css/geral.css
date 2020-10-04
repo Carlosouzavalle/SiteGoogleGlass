@@ -1,0 +1,71 @@
+@font-face{
+    font-family: "fontLogo";
+    src: url("/fonts/bubblegum-sans-regular.otf");
+}
+
+:root{
+    --white-color: #ffffff;
+    --darkGray-color: #606060;
+    --mediumGray-color: #888888;
+    --lightGray-color: #dddddd;
+    --veryLightGray: #cecece;
+    --black-color: #000000;
+}
+
+body {
+    background-color: var(--veryLightGray);
+    color: rgba(0, 0, 0, 1);
+}
+
+p { 
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {  
+    text-decoration: none;
+    color: var(--darkGray-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#interface {
+    width: 90%;
+    background-color: var(--white-color);
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+header.head {   
+    border-bottom: 1px var(--darkGray-color) solid;
+    height: 150px;
+    background: url("/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+    margin-left: 8px;
+}
+
+header.head h1 {
+    font-family: 'fontLogo', Arial;
+    font-size: 30pt;
+    color: var(--darkGray-color);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header.head h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: var(--mediumGray-color);
+    padding: 0px;
+    margin-top: 0px;
+}
+
+ /*relacionado ao cabeçario*/
+ header.head img#icon {
+    position: absolute;
+    left: 82%;
+    top: 11%;
+}
