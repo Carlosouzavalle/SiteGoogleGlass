@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/geral.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
@@ -20,11 +21,16 @@
             <nav class="menu">
                 <h1>Main menu</h1>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Especificações</a></li>
-                    <li><a href="">Fotos</a></li>
-                    <li><a href="">Multimidia</a></li>
-                    <li><a href="">Fale conosco</a></li>
+                    <li onmouseover="changePhoto('/image/home.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="index.html">Home</a></li>
+                    <li onmouseover="changePhoto('/image/especificacoes.png')" onmouseup="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="specs.html">Especificações</a></li>
+                    <li onmouseover="changePhoto('/image/fotos.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="">Fotos</a></li>
+                    <li onmouseover="changePhoto('/image/multimidia.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="">Multimidia</a></li>
+                    <li onmouseover="changePhoto('/image/contato.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
@@ -93,6 +99,7 @@
                 Facebook | Twitter
             </p>
         </footer>
+        <script src="/javascript/funcoes.js"></script>
     </div>
 </body>
 </html>
