@@ -69,3 +69,79 @@ header.head h2 {
     left: 82%;
     top: 11%;
 }
+/*relacionado ao cabeçario*/
+header.head nav.menu {
+    display: block;
+}
+/*relacionado ao cabeçario*/
+header.head nav.menu h1 {
+    display: none;
+}
+/*relacionado ao cabeçario*/
+header.head nav.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /*pode ser posicionada em qualquer lugar do site, a relative é apenas dentro do conteiner*/
+    top: 0;
+    left: 47%;    
+}
+ /*relacionado ao cabeçario*/
+nav.menu ul li {
+    display: inline-block;
+    background-color: var(--lightGray-color);
+    padding: 10px;
+    margin: 2px;    
+    border-radius: 8px;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+nav.menu ul li:hover {
+    background-color: var(--darkGray-color);
+}
+
+nav.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.menu li a:hover {
+    color: white;
+}
+
+article.main-news h2 {
+    font-size: 13pt;
+    color: var(--darkGray-color);
+    background-color: var(--lightGray-color);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header.article-header h1 {
+    font-family: 'fontLogo', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: var(--darkGray-color);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header.article-header h3 {
+    font-size: 12pt;
+    color: var(--darkGray-color);
+}
+
+header.article-header h3.update {
+    text-align: right;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid var(--darkGray-color);
+}
+
+footer p {
+    text-align: center;
+}

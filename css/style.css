@@ -1,0 +1,105 @@
+/*Coloca A section para o lado direito*/
+section.content{
+    display: block;
+    width: 55%;
+    float: left;
+    border-right: 1px solid var(--darkGray-color);
+    padding-right: 15px;
+}
+/*Article config*/
+header.article-header h2 {
+    font-size: 13pt;
+    color: var(--veryLightGray);
+    background-color: var(--white-color);
+}
+/*foto do homem e mulher*/
+figure.photo-subtitle {
+    border: 8px solid white; /*largura, tipo, cor*/
+    box-shadow: 1px 1px 4px black; /* deslocamento horizontal, vertical, espalhamento e cor*/
+    position: relative;
+    width: 50%;
+}
+figure.photo-subtitle img {
+    width: 100%;
+    height: 100%;
+}
+figure.photo-subtitle figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /*Cria um box dentro da borda*/
+    transition: opacity 1s;
+}
+figure.photo-subtitle:hover figcaption {
+    opacity: 1;
+}
+table {       /*Aqui esta Relacionado a tabela*/
+    border: 1px solid var(--darkGray-color);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table caption {   /*Aqui esta Relacionado a tabela*/
+    color: var(--mediumGray-color);
+    font-size: 13 pt;
+    font-weight: bold;
+}
+table span {   /*Aqui esta Relacionado a tabela*/
+    display: block;
+    font-size: 9pt;
+    color: var(--black-color);
+    float: right;
+    margin-top: 10px;
+}
+table td {   /*Aqui esta Relacionado a tabela*/
+    border: 1px solid var(--darkGray-color);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table td.col-left {   /*Aqui esta Relacionado a cor da tabela*/
+    background-color: var(--darkGray-color);
+    color: var(--white-color);
+    vertical-align: top;
+    font-weight: bold;
+}
+table td.col-right {   /*Aqui esta Relacionado a cor da tabela*/
+    background-color: var(--veryLightGray) ;
+}
+article.main-news video.movie {
+    width: 657px;
+}
+aside.second-content { /*Aqui esta Relacionado a lateral do site*/
+    display: block;
+    width: 40%;
+    float: right;
+    background-color: var(--lightGray-color);
+    padding: 10px;
+    margin: 5px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside.second-content h1 {
+    font-family: 'fontLogo', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: var(--darkGray-color);
+    margin-top: 0px;
+}
+
+aside.second-content h2 {
+    background-color: var(--darkGray-color);
+    font-size: 13pt;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+aside.second-content video.movie {
+    width: 480px;
+    left: 88px;
+}
