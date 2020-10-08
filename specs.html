@@ -34,6 +34,36 @@
                 </ul>
             </nav>
         </header>
+        <section id="body-full">
+            <article class="main-news">
+                <header>
+                    <h3>Glass > Especificações</h3>
+                    <h1>Raio-X no Google Glass</h1>
+                </header>
+                <p>
+                    Clique em qualquer área destacada da imagem para obter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+                </p>
+                <section id="content">
+                    <img src="/image/glass-esquema-marcado.jpg" alt="Esquema do Funcionamento do Google Glass" usemap="#myMap">
+                    <map name="myMap">
+                        <!--rect: coordenadas do canto superior esquerdo e do canto inferior direito-->
+                        <area shape="rect" coords="179,202,270,260" href="google-glass.html#screen" target="window" alt="Áreas de tela">
+                        <!--circle: coordenadas do centro da circunferencia e o valor do raio-->
+                        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="window" alt="Áreas de camera">
+                        <area shape="circle" coords="75,52,12" href="google-glass.html#gadgets" target="window" alt="Áreas do gadgets">
+                        <!--polígono: as quatro coordenadas dos cantos do polígono-->
+                        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensors" target="window" alt="Áreas do polígono">
+                    </map>
+                    <iframe src="google-glass.html" frameborder="0" name="window" id="frame-spec"></iframe>
+                </section>
+            </article>
+        </section>
+        <footer>
+            <p>
+                &copy;Copyright 2013 - by Carlos Eduardo<br>
+                Facebook | Twitter
+            </p>
+        </footer>
         <script src="/javascript/funcoes.js"></script>
     </div>
 </body>
