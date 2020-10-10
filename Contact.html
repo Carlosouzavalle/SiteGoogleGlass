@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div id="interface">
+        <header class="head">
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+
+            <img id="icon" src="/image/glass-oculos-preto-peq.png">
+
+
+            
+            <nav class="menu">
+                <h1>Main menu</h1>
+                <ul>
+                    <li onmouseover="changePhoto('/image/home.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="index.html">Home</a></li>
+                    <li onmouseover="changePhoto('/image/especificacoes.png')" onmouseup="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="specs.html">Especificações</a></li>
+                    <li onmouseover="changePhoto('/image/fotos.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="photos.html">Fotos</a></li>
+                    <li onmouseover="changePhoto('/image/multimidia.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="midia.html">Multimidia</a></li>
+                    <li onmouseover="changePhoto('/image/contato.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
+                    <a href="Contact.html"">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="body-full">
+            <article class="main-news">
+                <header class="article-header"> 
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                </header>
+                <form action="mailto:carlosouzavalle@gmail.com" method="post" id="contacts" oninput="totalPrice()">
+                    <fieldset class="user">
+                        <legend>Identificação do Usuário</legend>
+                        <p>
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" size="27" maxlength="40" placeholder="Nome completo">
+                        </p>
+                        <p>
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" size="14" maxlength="8" placeholder="Senha">
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" size="27" maxlength="40" placeholder="nome@email.com">
+                        </p>
+
+                        <fieldset class="sex">
+                            <legend> Sexo </legend>
+                                <input type="radio" name="male" id="male"> 
+                                <label for="male">Masculino</label><br>
+
+                                <input type="radio" name="female" id="female"  checked> 
+                                <label for="female"> Feminino </label>
+                        </fieldset>
+                        <p> 
+                            <label for="dateBirth">Data de Nascimento </label>
+                            <input type="date" name="dateBirth" id="dateBirth">
+                        </p>
+                    </fieldset>
+                    <fieldset class="adress">
+                        <legend> Endereço do Usuário </legend>
+                            <p>
+                                <label for="street"> Logradouro </label>
+                                <input type="text" name="street" id="street" size="22" maxlength="80" placeholder="rua, avenida, travessa, ...">
+                            </p>
+                            <p>
+                                <label for="number"> Número </label>
+                                <input type="number" name="number" id="number" min="0" max="99999" placeholder="número">
+                            </p>
+                            <p>
+                                <label for="uf"> Estado </label>
+                                <select name="uf" id="uf">
+                                     <option value=""> Selecione o estado... </option>
+                                   
+                                    <input type="hidden" name="state">
+                                </select>
+                            </p>
+                            <p>                                    
+                                <label for="city"> Cidade </label>
+                                <select name="cities"  disabled="disabled" id="cities">
+                                     <option value=""> Selecione a cidade... </option>
+                                </select>
+                            </p>
+
+                    </fieldset>
+                    
+                    <fieldset class="message">
+                       <legend> Mensagem do Usuário </legend>
+                       <p>
+                           <label for="degreeUrgency"> Grau de Urgência </label>
+                           <input type="range" name="degreeUrgency" id="degreeUrgency" min="0" max="10" step="2">
+                       </p>
+                       <p>
+                           <label for="tmessage"> Mensagem </label>
+                           <textarea name="tmessage" id="tmessage" cols="40" rows="5" placeholder="Deixe aqui sua mensagem...">
+                           </textarea>
+                       </p>
+                    </fieldset>
+                    
+                    <fieldset class="request">
+                        <legend> Quero um Google Glass </legend>
+                        <p>
+                            <input type="checkbox" name="request" id="request" checked>
+                            <label for="tResquest"> Gostaria de adquirir um Google Glass quando disponível </label>
+                        </p>
+                        <p>
+                            <label for="color"> Cor </label>
+                            <input type="color" name="color" id="color" value="#0000FF">
+                        </p>
+                        <p>
+                            <label for="amount"> Quantidade </label>
+                            <input type="number" name="tamount" id="amount" min="0" max="5" value="0">
+                        </p>
+                        <p>
+                            <label for="price">Preço Total: R\$</label>  
+                            <input type="text" name="price" id="price" placeholder="Total a pagar">
+                        </p>                  
+                    </fieldset>
+                
+                    <input type="image" src="/image/botao-enviar.png" alt="Botão enviar" id="enviar">
+                </form>
+            </article>
+        </section>
+        <footer>
+            <p>   
+               &COPY;Copyright 2013 - by Carlos Eduardo<br>
+                Facebook | Twitter
+            </p>
+            </footer>
+            <script src="/javascript/funcoes.js"></script>
+    </div>
+</body>
+</html>

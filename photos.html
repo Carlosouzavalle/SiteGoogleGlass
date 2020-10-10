@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/geral.css">
-    <link rel="stylesheet" href="/css/specs.css">
+    <link rel="stylesheet" href="/css/fotos.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
@@ -30,37 +30,34 @@
                     <li onmouseover="changePhoto('/image/multimidia.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
                     <a href="midia.html">Multimidia</a></li>
                     <li onmouseover="changePhoto('/image/contato.png')" onmouseout="changePhoto('/image/glass-oculos-preto-peq.png')">
-                    <a href="Contact.html">Fale conosco</a></li>
+                    <a href="">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
+
         <section id="body-full">
-            <article class="main-news">
-                <header>
-                    <h3>Glass > Especificações</h3>
-                    <h1>Raio-X no Google Glass</h1>
+            <article id="main-news">
+                <header class="article-header">
+                    <h3>Glass > Fotos</h3>
+                    <h1>Galeria de Imagens do Google Glass</h1>
                 </header>
-                <p>
-                    Clique em qualquer área destacada da imagem para obter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-                </p>
-                <section id="content">
-                    <img src="/image/glass-esquema-marcado.jpg" alt="Esquema do Funcionamento do Google Glass" usemap="#myMap">
-                    <map name="myMap">
-                        <!--rect: coordenadas do canto superior esquerdo e do canto inferior direito-->
-                        <area shape="rect" coords="179,202,270,260" href="google-glass.html#screen" target="window" alt="Áreas de tela">
-                        <!--circle: coordenadas do centro da circunferencia e o valor do raio-->
-                        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="window" alt="Áreas de camera">
-                        <area shape="circle" coords="75,52,12" href="google-glass.html#gadgets" target="window" alt="Áreas do gadgets">
-                        <!--polígono: as quatro coordenadas dos cantos do polígono-->
-                        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensors" target="window" alt="Áreas do polígono">
-                    </map>
-                    <iframe src="google-glass.html" frameborder="0" name="window" id="frame-spec"></iframe>
-                </section>
             </article>
+
+            <p>
+                Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+            </p>
+            <ul id="photos-album">
+                <li class="photo01"><span>Agenda e lembrentes</span></li>
+                <li class="photo02"><span>Sergey Brin usando o Glass</span></li>
+                <li class="photo03"><span>Leve e compacto</span></li>
+                <li class="photo04"><span>Sensação de uma tela de 50</span></li>
+                <li class="photo05"><span>Vários tipos de lente</span></li>
+                <li class="photo06"><span>Informações importantes</span></li>
+            </ul>
         </section>
         <footer>
-            <p>
-                &copy;Copyright 2013 - by Carlos Eduardo<br>
+            <p>   
+               &COPY;Copyright 2013 - by Carlos Eduardo<br>
                 Facebook | Twitter
             </p>
         </footer>
